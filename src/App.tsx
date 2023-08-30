@@ -9,9 +9,9 @@ import { About } from "./pages/About/About";
 import Resume from "./pages/Resume/Resume";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { GlobalStyle } from "./styles/global";
-import { Fragment, useCallback,  } from "react";
+import { Fragment, useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+// import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 import { Contact } from "./pages/Contact/Contact";
 import Login from "./pages/login/login";
 import Register from "./pages/Register/page";
@@ -24,16 +24,12 @@ import { useAuth } from "./states/auth";
 // import { AuthContext } from "./context/AuthContext";
 
 function App() {
-    // const { isAuthenticated } = useContext(AuthContext);
-    const { isAuthenticated } = useAuth();
+  // const { isAuthenticated } = useContext(AuthContext);
+  const { isAuthenticated } = useAuth();
 
-  const particlesInit = useCallback(async (engine: any) => {
-    await loadSlim(engine);
-  }, []);
+  const particlesInit = useCallback(async () => {}, []);
 
-  const particlesLoaded = useCallback(async (container: any) => {
-    await container;
-  }, []);
+  const particlesLoaded = useCallback(async () => {}, []);
 
   return (
     <>
