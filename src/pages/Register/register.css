@@ -1,0 +1,13 @@
+.rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contregister {
+  width: 600px;
+}
+@media screen and (max-width: 831px) {
+  .contregister {
+    width: 100%;
+  }
+}

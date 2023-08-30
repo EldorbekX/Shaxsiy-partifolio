@@ -1,0 +1,14 @@
+
+.ant-layout {
+  height: 663px !important;
+  background-color: transparent !important;
+}
+.ant-layout-content {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 991px) {
+  .ant-layout {
+    height: auto !important;
+  }
+}

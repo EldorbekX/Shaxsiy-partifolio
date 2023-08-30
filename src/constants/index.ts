@@ -1,0 +1,9 @@
+// export const TOKEN = "PORTFOLIO_TOKEN";
+export const TOKEN = "token";
+// export const USER = "expire_date";
+export const USER = "E-COMMERCE-USER";
+export const ROLE = "role";
+export const EXPIRE_DATE = "expire_date";
+export const API = "https://ap-portfolio-backend.up.railway.app/";
+export const ENDPOINT = API + "api/v1/";
+export const IMG_URL = API + "upload/";
